@@ -4,6 +4,8 @@
 #define NumberOfStrings 100
 #define MaxSizeOfString 200
 
+#define CHUNK 10000
+
 #define TSize 10
 #define TRUE 1
 
@@ -35,7 +37,42 @@ void Test()
     int n; //number of words
 	int i; //loop counter
 	int k = 0;
-	char str[]= fopen("text.txt","r");
+
+
+    char buf[CHUNK];
+    FILE *file;
+    size_t nread;
+
+    file = fopen("test.txt", "r");
+    if (file) {
+        while ((nread = fread(buf, 1, sizeof buf, file)) > 0)
+            fwrite(buf, 1, nread, stdout);
+        if (ferror(file)) {
+            /* deal with error */
+        }
+        fclose(file);
+    }
+
+
+    char str[CHUNK] = "Trump is a virgin";
+    char* stringArray[5];
+    int f = 0;
+	int init_size = strlen(str);
+	char delim[] = " ";
+
+	char *ptr = strtok(str, delim);
+
+	while (ptr != NULL)
+	{
+	    stringArray[f] = ptr;
+		printf("'%s'\n", ptr);
+		ptr = strtok(NULL, delim);
+	}
+    for(int s =0; s<5; s++){
+        printf("%s", ptr);
+    }
+
+	memcpy(str, buf, CHUNK);
 	char arr[NumberOfStrings][MaxSizeOfString];
 
 	n=getWords(str,arr);
@@ -46,5 +83,5 @@ void Test()
             k++;
         }
 	}
-	printf("%d", k);
+	printf("\n%d", k);
 }

@@ -37,6 +37,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="test.txt" />
+		<Unit filename="text.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
