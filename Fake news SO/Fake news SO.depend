@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1554724784 source:c:\users\tamle\desktop\sofn\fake news so\main.c
+	"Bio.h"
+	"K9.h"
+
+1554723993 c:\users\tamle\desktop\sofn\fake news so\bio.h
+	<stdio.h>
+	<stdlib.h>
+
+1554726588 c:\users\tamle\desktop\sofn\fake news so\k9.h
+	"Bio.h"
+	<string.h>
+

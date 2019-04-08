@@ -1,6 +1,8 @@
-#include <stdio.h>
+#include "Bio.h"
+#include "K9.h"
 
-int main
+int main()
+{
+    Test();
 
-    printf("kage");
-ssss
+}
