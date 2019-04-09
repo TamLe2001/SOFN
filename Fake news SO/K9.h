@@ -83,5 +83,5 @@ void Test()
             k++;
         }
 	}
-	printf("\n%d", k);
+	printf("\n  <%d", k);
 }
