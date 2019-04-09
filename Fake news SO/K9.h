@@ -1,10 +1,10 @@
 #include "Bio.h"
 #include <string.h>
 
-#define NumberOfStrings 100
-#define MaxSizeOfString 200
+#define NumberOfStrings 142
+#define MaxSizeOfString 400
 
-#define CHUNK 10000
+#define CHUNK 20000
 
 #define TSize 10
 #define TRUE 1
@@ -32,7 +32,7 @@ int getWords(char *base, char target[NumberOfStrings][MaxSizeOfString])
 
 void Test()
 {
-    char* Testtxt[TSize] = {"Hej", "med", "dig"};
+    char* Testtxt[5] = {"Hej", "med", "dig"};
 
     int n; //number of words
 	int i; //loop counter
@@ -54,7 +54,7 @@ void Test()
     }
 
 
-    char str[CHUNK] = "Trump is a virgin";
+    char str[CHUNK];
     char* stringArray[5];
     int f = 0;
 	int init_size = strlen(str);
@@ -73,15 +73,17 @@ void Test()
     }
 
 	memcpy(str, buf, CHUNK);
+
 	char arr[NumberOfStrings][MaxSizeOfString];
 
 	n=getWords(str,arr);
 
 	for(i=0;i<=n;i++){
-        if(strcmp(arr[i],"is") == 0){
+        if(strcmp(arr[i],"trump") == 0){
             //printf("The headline contains the word: is");
             k++;
         }
 	}
 	printf("\n  <%d", k);
+
 }
