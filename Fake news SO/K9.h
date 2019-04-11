@@ -55,7 +55,7 @@ void Test()
 
 
     char str[CHUNK];
-    char* stringArray[5];
+    char* stringArray[500];
     int f = 0;
 //	int init_size = strlen(str);
 	char delim[] = " ";
@@ -69,7 +69,7 @@ void Test()
 		ptr = strtok(NULL, delim);
 	}
     for(int s =0; s<5; s++){
-        printf("%s", ptr); //this is null
+ //       printf("%s", ptr); //this is null
     }
 
 	memcpy(str, buf, CHUNK);
