@@ -4,7 +4,7 @@
 #define NumberOfStrings 142
 #define MaxSizeOfString 400
 
-#define CHUNK 20000
+#define CHUNK 10000
 
 #define TSize 10
 #define TRUE 1
@@ -32,7 +32,7 @@ int getWords(char *base, char target[NumberOfStrings][MaxSizeOfString])
 
 void Test()
 {
-    char* Testtxt[5] = {"Hej", "med", "dig"};
+//    char* Testtxt[5] = {"Hej", "med", "dig"};
 
     int n; //number of words
 	int i; //loop counter
@@ -57,7 +57,7 @@ void Test()
     char str[CHUNK];
     char* stringArray[5];
     int f = 0;
-	int init_size = strlen(str);
+//	int init_size = strlen(str);
 	char delim[] = " ";
 
 	char *ptr = strtok(str, delim);
@@ -69,7 +69,7 @@ void Test()
 		ptr = strtok(NULL, delim);
 	}
     for(int s =0; s<5; s++){
-        printf("%s", ptr);
+        printf("%s", ptr); //this is null
     }
 
 	memcpy(str, buf, CHUNK);
