@@ -1,8 +1,8 @@
 #include "Bio.h"
-#include "K9.h"
+#include "K10.h"
 
 int main()
 {
-    Test();
-
+Test2();
+    return 0;
 }

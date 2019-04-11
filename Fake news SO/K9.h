@@ -1,8 +1,8 @@
 #include "Bio.h"
-#include <string.h>
 
-#define NumberOfStrings 142
-#define MaxSizeOfString 400
+
+#define NumberOfStrings 10
+#define MaxSizeOfString 20
 
 #define CHUNK 10000
 
@@ -55,7 +55,7 @@ void Test()
 
 
     char str[] = "hej du er grim hej";
-    char* stringArray[5];
+    char* stringArray[10000];
     int f = 0;
 //	int init_size = strlen(str);
 	char delim[] = " ";
