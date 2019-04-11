@@ -54,8 +54,8 @@ void Test()
     }
 
 
-    char str[CHUNK];
-    char* stringArray[500];
+    char str[CHUNK] = "hej du er grim hej";
+    char* stringArray[5];
     int f = 0;
 //	int init_size = strlen(str);
 	char delim[] = " ";
