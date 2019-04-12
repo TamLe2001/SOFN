@@ -31,10 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bank.h" />
 		<Unit filename="Bio.h" />
-		<Unit filename="K10.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="K10.h" />
 		<Unit filename="K9.h" />
 		<Unit filename="main.c">
