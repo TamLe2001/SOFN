@@ -1,8 +1,8 @@
 #include "Bio.h"
 #include <string.h>
 
-#define NumberOfStrings 142
-#define MaxSizeOfString 400
+#define NumberOfStrings 100
+#define MaxSizeOfString 200
 
 #define CHUNK 10000
 

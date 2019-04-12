@@ -1,20 +1,42 @@
 #include "K9.h"
 #include "Bio.h"
-
+#define NumOfKWords 2
 
 void Test2()
 {
-    char txttst[] = "HEJ HVordan gaar det HEJ HEJ";
-    char ptst[NumberOfStrings][MaxSizeOfString];
+    char txttst[] = "hej";
+    char *keyWord[NumOfKWords]={"trump", "HVordan"};
 
-    printf("%s", txttst);
+    char buf[CHUNK];
+    FILE *file;
+    size_t nread;
+    char stringFile[150];
+    file = fopen("test.txt", "r");
 
-    char* stringArray[10000];
-    int f = 0, i = 0, Checker, k = 0, o;
+ /*   if (file) {
+        while ((nread = fread(buf, 1, sizeof buf, file)) > 0)
+            fwrite(buf, 1, nread, stdout);
+        if (ferror(file)) {
+            /* deal with error */
+        //}
+        while (!feof(file)){
+            fgets(stringFile, 150, file);
+        }
+        fclose(file);
+        printf("%s", stringFile);
+ //}
+
+
+///    memcpy(txttst, buf, CHUNK);
+
+
+    char* stringArray;
+    int f = 0, i = 0, Checker, k = 0, Checker2;
 //	int init_size = strlen(str);
 	char delim[] = " ";
-    char *Each[i];
+    char *Each[100];
 	char *ptr = strtok(txttst, delim);
+    int numberOfWords=0;
 
 	while (ptr != NULL)
 	{
@@ -23,13 +45,15 @@ void Test2()
 		Each[i] = ptr;
 		i++;
 		ptr = strtok(NULL, delim);
+		numberOfWords++;
 	}
 
-	o = getWords(txttst, ptst);
 
-	for(Checker=0;Checker<=o;Checker++){
-        if(strcmp(Each[Checker],"HEJ") == 0){
+	for(Checker=0;Checker<numberOfWords;Checker++){
+        for(Checker2=0;Checker2<NumOfKWords;Checker2++){
+        if(strcmp(Each[Checker],keyWord[Checker2]) == 0){
             k++;
+            }
         }
 	}
 
