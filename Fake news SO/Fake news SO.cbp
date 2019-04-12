@@ -36,9 +36,12 @@
 		<Unit filename="K10.h" />
 		<Unit filename="K9.h" />
 		<Unit filename="Keyworddealer.h" />
+		<Unit filename="antiKeywords.txt" />
+		<Unit filename="bigKeywords.txt" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="mediumKeywords.txt" />
 		<Unit filename="test.txt" />
 		<Unit filename="text.h" />
 		<Extensions>

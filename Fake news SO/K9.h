@@ -1,6 +1,7 @@
 #include "Bio.h"
 #include <string.h>
 
+
 #define NumberOfStrings 100
 #define MaxSizeOfString 200
 

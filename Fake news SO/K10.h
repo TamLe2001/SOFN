@@ -1,12 +1,17 @@
 #include "K9.h"
 #include "Bio.h"
-#define NumOfKWords 2
+#define NumOfKWords 14
+#include "Keyworddealer.h"
 
 void Test2()
 {
     char txttst[] = "hej";
-    char *keyWord[NumOfKWords]={"trump", "HVordan"};
-    ///Keywords
+    char *keyWord[NumOfKWords]={"years", "writers", "wow", "workers", "word", "wont", "won", "woman", "wire", "wins", "winning", "winner", "win", "wikileaks"};
+
+
+
+
+    ///Keywords lånt af Theodore
 
     char buf[CHUNK];
     FILE *file;
@@ -58,5 +63,7 @@ void Test2()
         }
 	}
 
-    printf("\n%d", k);
-}
+    printf("\ncontains %d of words which can maybe see the text as fake news\n", k);
+	}
+
+

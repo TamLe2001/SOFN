@@ -23,14 +23,18 @@
 	<stdlib.h>
 	<string.h>
 
-1555009707 c:\users\kenny\documents\github\sofn\fake news so\k9.h
+1555073988 c:\users\kenny\documents\github\sofn\fake news so\k9.h
 	"Bio.h"
+	<string.h>
 
-1555009707 c:\users\kenny\documents\github\sofn\fake news so\k10.h
+1555076104 c:\users\kenny\documents\github\sofn\fake news so\k10.h
 	"K9.h"
 	"Bio.h"
+	"Keyworddealer.h"
 
 1555068239 c:\users\tamle\desktop\sofn\fake news so\k10.h
 	"K9.h"
 	"Bio.h"
+
+1555075523 c:\users\kenny\documents\github\sofn\fake news so\keyworddealer.h
 
