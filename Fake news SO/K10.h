@@ -11,7 +11,7 @@ void Test2()
     char buf[CHUNK];
     FILE *file;
     size_t nread;
-    char stringFile[150000];
+    char stringFile[100000];
     file = fopen("test.txt", "r");
 
  /*   if (file) {
@@ -21,7 +21,7 @@ void Test2()
             /* deal with error */
         //}
         while (!feof(file)){
-            fgets(stringFile, 150000, file);
+            fgets(stringFile, 100000, file);
         }
         fclose(file);
         printf("%s", stringFile);

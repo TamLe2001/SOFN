@@ -35,6 +35,7 @@
 		<Unit filename="Bio.h" />
 		<Unit filename="K10.h" />
 		<Unit filename="K9.h" />
+		<Unit filename="Keyworddealer.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
