@@ -6,11 +6,12 @@ void Test2()
 {
     char txttst[] = "hej";
     char *keyWord[NumOfKWords]={"trump", "HVordan"};
+    ///Keywords
 
     char buf[CHUNK];
     FILE *file;
     size_t nread;
-    char stringFile[150];
+    char stringFile[150000];
     file = fopen("test.txt", "r");
 
  /*   if (file) {
@@ -20,7 +21,7 @@ void Test2()
             /* deal with error */
         //}
         while (!feof(file)){
-            fgets(stringFile, 150, file);
+            fgets(stringFile, 150000, file);
         }
         fclose(file);
         printf("%s", stringFile);
@@ -34,14 +35,14 @@ void Test2()
     int f = 0, i = 0, Checker, k = 0, Checker2;
 //	int init_size = strlen(str);
 	char delim[] = " ";
-    char *Each[100];
-	char *ptr = strtok(txttst, delim);
+    char *Each[150000];
+	char *ptr = strtok(stringFile, delim);
     int numberOfWords=0;
 
 	while (ptr != NULL)
 	{
 	    stringArray[f] = ptr;
-		printf("\n'%s'", ptr);
+//		printf("\n'%s'", ptr);
 		Each[i] = ptr;
 		i++;
 		ptr = strtok(NULL, delim);
